@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured HTML Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to My Page</h1>
+</header>
+
+<!-- Ordered List with Roman Numerals -->
+<section>
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+    </ol>
+</section>
+
+<!-- External Image -->
+<section>
+    <h2>Image from Pexels</h2>
+    <img src="./food.jpg" alt="Food Image" width="600" height="500">
+</section>
+
+<!-- Contact Table -->
+<section>
+    <h2>Contacts</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Street, NY</td>
+            <td>+1234567890</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Avenue, CA</td>
+            <td>+0987654321</td>
+            <td>jane@example.com</td>
+        </tr>
+        <tr>
+            <td>Mike Johnson</td>
+            <td>789 Road, TX</td>
+            <td>+1122334455</td>
+            <td>mike@example.com</td>
+        </tr>
+        <tr>
+            <td>Lisa Brown</td>
+            <td>101 Blvd, FL</td>
+            <td>+6677889900</td>
+            <td>lisa@example.com</td>
+        </tr>
+        <tr>
+            <td>David Wilson</td>
+            <td>202 Parkway, WA</td>
+            <td>+2233445566</td>
+            <td>david@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Registration Form -->
+<section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Kenya">Kenya</option>
+            <option value="South Africa">South Africa</option>
+        </select>
+        <br><br>
+
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label>
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</section>
+</body>
+</html>
